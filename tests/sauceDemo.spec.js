@@ -25,7 +25,6 @@ test('SauceDemo complete purchase flow', async ({page, loginPage, productsPage, 
 
     // 4. Sort products Low → High
     let products;
-
     await test.step('Sort products by price low to high', async () => {
         await productsPage.sortByPriceLowToHigh();
         products = await productsPage.getProducts();
